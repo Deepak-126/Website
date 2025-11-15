@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products | Lakshmi Ganapthi Agencies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-logo">LG</div>
+        <div>
+          <div class="brand-text-main">Lakshmi Ganapthi Agencies</div>
+          <div class="brand-text-sub">BV300 &amp; Bovans • Chicks & Growers</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <span class="badge-pill">Layer lines</span>
+        <button class="btn-main" onclick="window.location.href='contact.html'">
+          Contact for stock <span class="arrow">↗</span>
+        </button>
+      </div>
+
+      <button class="nav-toggle" onclick="toggleMobileNav()">Menu</button>
+    </div>
+  </header>
+
+  <div id="mobileNav" class="mobile-nav">
+    <div class="container mobile-nav-inner">
+      <a href="index.html" onclick="toggleMobileNav()">Home</a>
+      <a href="products.html" onclick="toggleMobileNav()">Products</a>
+      <a href="services.html" onclick="toggleMobileNav()">Services</a>
+      <a href="about.html" onclick="toggleMobileNav()">About</a>
+      <a href="contact.html" onclick="toggleMobileNav()">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div class="reveal">
+            <div class="section-eyebrow">Products</div>
+            <h1 class="section-title">BV300 &amp; Bovans – chicks and growers.</h1>
+          </div>
+          <p class="section-subtitle reveal">
+            
+          </p>
+        </div>
+
+        <div class="products-layout">
+          <!-- TABS -->
+          <div class="tabs reveal card-layered">
+            <div class="tab-list">
+              <button
+                class="tab-btn active"
+                data-tab-group="products"
+                data-tab-target="panel-bv300"
+              >
+                <span class="dot"></span> BV300
+              </button>
+              <button
+                class="tab-btn"
+                data-tab-group="products"
+                data-tab-target="panel-bovans"
+              >
+                <span class="dot"></span> Bovans
+              </button>
+            </div>
+
+            <div class="tab-panels">
+              <!-- BV300 -->
+              <div
+                id="panel-bv300"
+                class="tab-panel active"
+                data-tab-panel-group="products"
+              >
+                <div class="product-line">Layer line – BV300</div>
+                <div class="product-title-main">BV300 chicks & growers</div>
+                <p class="product-body">
+                  BV300 is a well–known layer line designed for strong shell quality,
+                  high peak production and efficient feed conversion. With proper
+                  brooding and management, BV300 hens can deliver stable performance
+                  throughout the laying cycle.
+                </p>
+                <ul class="product-meta-list">
+                  <li>Chicks and growers as per batch planning and availability.</li>
+                  <li>Suitable for commercial layer sheds – cage or deep litter.</li>
+                  <li>Age groups: day–old chicks to growers (near point–of–lay).</li>
+                  <li>Focus on transparent age, vaccination and batch information.</li>
+                </ul>
+
+                
+              </div>
+
+              <!-- Bovans -->
+              <div
+                id="panel-bovans"
+                class="tab-panel"
+                data-tab-panel-group="products"
+              >
+                <div class="product-line">Layer line – Bovans</div>
+                <div class="product-title-main">Bovans chicks & growers</div>
+                <p class="product-body">
+                  Bovans layers are appreciated for balanced production, robust health
+                  and good egg characteristics. They work well in both small and
+                  medium–scale farms when given proper housing, feed and light
+                  management.
+                </p>
+                <ul class="product-meta-list">
+                  <li>Bovans chicks and growers based on farm tie–ups and stock.</li>
+                  <li>Best suited for farmers who value consistency and adaptability.</li>
+                  <li>Options for chicks or growers depending on your brooding plan.</li>
+                  <li>Details clearly discussed before confirming any batch.</li>
+                </ul>
+
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDE INFO CARD -->
+          <aside class="product-side-card reveal">
+            <div class="product-side-tag">
+              BV300 &amp; Bovans specialist <span>🐔</span>
+            </div>
+            <p>
+              We focus on two main layer lines – BV300 and Bovans – so that planning,
+              documentation and communication stay clean for farmers and traders.
+            </p>
+            <p style="margin-top:0.7rem;">
+              Minimum quantity, age groups and current stock depend on farm schedule.
+              For exact availability, please reach out with your location and required
+              quantity.
+            </p>
+            <p style="margin-top:0.7rem; font-size:0.82rem;">
+              
+            </p>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Lakshmi Ganapthi Agencies.</div>
+      <div class="footer-chip">Products • BV300 &amp; Bovans</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Lakshmi Ganapthi Agencies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-logo">LG</div>
+        <div>
+          <div class="brand-text-main">Lakshmi Ganapthi Agencies</div>
+          <div class="brand-text-sub">Contact & Details</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <span class="badge-pill">Reach us directly</span>
+        <button class="btn-main" onclick="window.location.href='tel:+91XXXXXXXXXX'">
+          Call now <span class="arrow">↗</span>
+        </button>
+      </div>
+
+      <button class="nav-toggle" onclick="toggleMobileNav()">Menu</button>
+    </div>
+  </header>
+
+  <div id="mobileNav" class="mobile-nav">
+    <div class="container mobile-nav-inner">
+      <a href="index.html" onclick="toggleMobileNav()">Home</a>
+      <a href="products.html" onclick="toggleMobileNav()">Products</a>
+      <a href="services.html" onclick="toggleMobileNav()">Services</a>
+      <a href="about.html" onclick="toggleMobileNav()">About</a>
+      <a href="contact.html" onclick="toggleMobileNav()">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div class="reveal">
+            <div class="section-eyebrow">Contact</div>
+            <h1 class="section-title">Get in touch for BV300 & Bovans supply.</h1>
+          </div>
+          <p class="section-subtitle reveal">
+            Reach us directly through phone, WhatsApp or email. Share your location,
+            quantity and preferred age so we can respond accurately.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card reveal">
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">
+              <!-- EDIT phone numbers -->
+              +91-9666939299<br />
+              
+            </div>
+
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-value">
+              <!-- EDIT WhatsApp -->
+              +91-9666939299
+            </div>
+
+            <div class="contact-note">
+              Please send a WhatsApp message with your name, farm name, location
+              and approximate requirement (chicks / growers, BV300 / Bovans) for
+              a faster and clearer response.
+            </div>
+          </article>
+
+          <article class="contact-card reveal">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+              <!-- EDIT email -->
+              plganapathi6@gmail.com
+            </div>
+
+            <div class="contact-label">Address</div>
+            <div class="contact-value">
+              <!-- EDIT address -->
+             Paluru Village<br>
+             Athili Mandal<br>
+             West Godavari<br>
+             Andhra Pradesh<br>
+             Pincode - 534134
+            </div>
+
+            <div class="contact-note">
+              Availability of BV300 and Bovans chicks & growers changes with
+              farm schedule. Final confirmation is always based on current stock,
+              transport possibilities and climate conditions.
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Lakshmi Ganapthi Agencies.</div>
+      <div class="footer-chip">Contact • Chicks &amp; Growers</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
